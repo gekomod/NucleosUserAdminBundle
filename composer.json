@@ -1,5 +1,5 @@
 {
-    "name": "nucleos/user-admin-bundle",
+    "name": "gekomod/user-admin-bundle",
     "type": "symfony-bundle",
     "description": "Adminstration of users and groups in symfony",
     "keywords": [
