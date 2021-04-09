@@ -22,7 +22,7 @@ use Symfony\Contracts\EventDispatcher\EventDispatcherInterface;
  */
 class UserCRUDController extends CRUDController
 {
-    protected function preDelete(Request $request, $object)
+    protected function preDelete(Request $request, object $object): ? \Symfony\Component\HttpFoundation\Response
     {
         $this->getEventDispatcher()->dispatch(new AccountDeletionEvent($object, $request), NucleosUserEvents::ACCOUNT_DELETION);
 
